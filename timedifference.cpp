@@ -1,6 +1,7 @@
 // Computes time difference of two time period
 // Time periods are entered by the user
 
+
 #include <iostream>
 using namespace std;
 
@@ -47,5 +48,6 @@ void computeTimeDifference(struct TIME t1, struct TIME t2, struct TIME *differen
         t1.minutes += 60;
     }
     difference->minutes = t1.minutes-t2.minutes;
+
     difference->hours = t1.hours-t2.hours;
 }
